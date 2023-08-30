@@ -1,0 +1,124 @@
+#home {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+    >section {
+        width: 100%;
+
+
+        &:first-of-type {
+            padding-left: $p;
+
+            >div {
+                border-top: 1px solid $color6_2;
+                height: 100%;
+                padding-top: 4.5rem;
+
+                >h1 {
+                    font: 900 3.5rem $text1;
+                }
+
+                .typewriterpara {
+                    // margin: 10px 0;
+                    height: 8px;
+                    letter-spacing: 5px;
+                }
+
+                >div {
+                    display: flex;
+                    margin: 4rem 0;
+                    gap: 4rem;
+                    width: 70%;
+                    align-items: center;
+
+                    >a {
+                        &:first-of-type {
+                            background-color: $color3;
+                            color: $color1;
+                            padding: 1rem 2.5rem;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                background-color: $color3_1;
+                            }
+                        }
+
+                        &:last-of-type {
+                            font: 500 1.2rem $text2;
+                            color: $color5;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                aside {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 70%;
+                    // position: relative;
+
+                    // &::after {
+                    //     content: "";
+                    //     background-color: $color4;
+                    //     width: 100%;
+                    //     height: 5rem;
+                    //     position: absolute;
+                    //     top: 20px;
+                    //     left: 20px;
+                    //     z-index: -1;
+                    //     border-radius: 50px;
+                    // }
+
+
+                }
+
+                article {
+                    margin: 1.5rem 0;
+                    width: 10rem;
+                    color: $color5;
+
+                    >p {
+                        font: 900 2rem $text1;
+                    }
+
+                    >span {
+                        font: 500 1rem $text2;
+                    }
+                }
+
+
+
+            }
+
+        }
+
+        &:last-of-type {
+            display: flex;
+            border-top: 1px solid $color6_2;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+
+            &::after {
+                content: "";
+                // top: 11vmax;
+                bottom: 11vmax;
+                width: 28vmax;
+                height: 28vmax;
+                background-color: $color3;
+                border-radius: 50%;
+                position: absolute;
+                z-index: -1;
+            }
+            >img{
+                width: 40vmax;
+                height: 50vmax;
+                object-fit: contain;
+            }
+
+        }
+    }
+}
